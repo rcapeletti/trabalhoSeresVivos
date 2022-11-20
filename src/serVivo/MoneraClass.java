@@ -1,12 +1,12 @@
 package serVivo;
 import java.util.Scanner;
 
-public class PlantaeClasse extends PlantaeFilo{
+public class MoneraClasse extends MoneraFilo{
 	
 	private String nomeClasse;
 	Scanner scan = new Scanner(System.in);
 	
-	public PlantaeClasse() {
+	public MoneraClasse() {
 		
 	}
 

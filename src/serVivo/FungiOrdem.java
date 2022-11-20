@@ -4,7 +4,7 @@ public class FungiOrdem extends FungiClasse{
 	private String nomeOrdem;
 	Scanner scan = new Scanner(System.in);
 	
-	public AnimaliaOrdem() {
+	public FungiOrdem() {
 		
 	}
 
