@@ -1,7 +1,9 @@
 package serVivo;
+
 import java.util.Scanner;
 
 import java.util.ArrayList;
+
 public class SeresVivos {
 
 	public static void main(String[] args) {
@@ -15,6 +17,21 @@ public class SeresVivos {
 		AnimaliaFamilia afa = new AnimaliaFamilia();
 		AnimaliaGenero ag = new AnimaliaGenero();
 		AnimaliaEspecie ae = new AnimaliaEspecie();
+//plantae
+		//protista
+		//monera
+		
+		//fungi
+		ArrayList fungi = new ArrayList();
+		Fungi f = new Fungi();
+		FungiFilo ff = new FungiFilo();
+		FungiClasse fc = new FungiClasse();
+		FungiOrdem fo = new FungiOrdem();
+		FungiFamilia ffa = new FungiFamilia();
+		FungiGenero fg = new FungiGenero();
+		FungiEspecie fe = new FungiEspecie();
+		
+
 		boolean flag = true;
 		while(flag) {
 		System.out.println("Escolha um reino: (1) Animalia | (2) Plantae | (3) Protista | (4) Monera | (5) Fungi");
@@ -49,10 +66,23 @@ public class SeresVivos {
 			System.out.println("Inserir aqui");
 			break;
 		    }
-		case 5: {
-			System.out.println("Inserir aqui");
-			break;
-		    }
+			case 5: {
+				f.cadastrarNomePadrao();
+				fungi.add(f.getNomePadrao());
+				ff.cadastrarFilo();
+				fungi.add(ff.getNomeFilo());
+				fc.cadastrarClasse();
+				fungi.add(fc.getNomeClasse());
+				fo.cadastrarOrdem();
+				fungi.add(fo.getNomeOrdem());
+				ffa.cadastrarFamilia();
+				fungi.add(ffa.getNomeFamilia());
+				fg.cadastrarGenero();
+				fungi.add(fg.getNomeGenero());
+				fe.cadastrarEspecie();
+				fungi.add(fe.getNomeEspecie());
+				break;
+				}
 		}
 		System.out.println("Escolha um reino para ver a lista cadastrada: (1) Animalia | (2) Plantae | (3) Protista | (4) Monera | (5) Fungi | (6) Sair");
 		flag = false;
@@ -61,7 +91,9 @@ public class SeresVivos {
 			case 1:
 				System.out.println(animal);
 				break;
-				
+				case 5: {
+					System.out.println(fungi);
+					break;
 			case 6: {
 				System.out.println("Você escolheu sair");
 				break;
@@ -73,6 +105,3 @@ public class SeresVivos {
 
 	}
 		}
-
-	
-
